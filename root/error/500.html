@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Internal Server Error</title>
+	<base href="/">
+	<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('/assets/fondo.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+			min-height: 90vh;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .error-code {
+            font-size: 150px;
+            font-weight: bold;
+            color: #FF0000;
+            text-shadow: 5px 5px 10px rgba(255, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .error-message {
+            font-size: 50px;
+            font-weight: bold;
+            color: #FFF;
+            text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+            margin: 0;
+        }
+
+        main {
+            font-size: 20px;
+        }
+
+        .description {
+            margin: 20px 0;
+            color: #aaa;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #000;
+            background-color: #FF0000;
+            border: 2px solid #FFF;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .home-link:hover {
+            background-color: #FFF;
+            color: #FF0000;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .footer-text {
+            margin: 0;
+        }
+			@keyframes glitch {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-5px, 5px); }
+            50% { transform: translate(5px, -5px); }
+            75% { transform: translate(-5px, -5px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        .error-message {
+            position: relative;
+            display: inline-block;
+            animation: glitch 1s infinite;
+        }
+		
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="error-code">500</h1>
+            <h2 class="error-message">Internal Server Error</h2>
+        </header>
+        <main>
+            <p class="description">Uh-oh! Something went wrong on our end. We’re working on it, but you might want to try again later.</p>
+            <a href="/" class="home-link">Go to Homepage</a>
+        </main>
+        <footer>
+            <p class="footer-text">2024 Imoro-sa & Alfofern Webserv. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
